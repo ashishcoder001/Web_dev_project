@@ -11,13 +11,13 @@ html,body {
 
 }
 #minicircle{
-    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #fff;
     position:absolute;
-    z-index: 99999;
+    z-index: 9999;
 }
 .bounding{
     width: fit-content;
@@ -150,10 +150,12 @@ html,body {
     border-bottom:1px solid #888
 }
 .elem img{
-    display: none;
-    height: 130%;
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
     z-index: 999;
     position: absolute;
+    transform: translate(-50%, -50%);
 }
 #about{
     display: flex;
@@ -166,8 +168,7 @@ html,body {
     background-color: black;
 }
 #textabout{
-    width: 25rem;
-    font-family: sans-serif;
+    width: 25rem 
 
 }
 #textabout h5{
